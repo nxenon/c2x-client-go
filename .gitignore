@@ -1,0 +1,6 @@
+.idea
+notes.txt
+archives
+test*
+c2x-client*
+!c2x-client.go
