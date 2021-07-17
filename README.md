@@ -22,3 +22,13 @@ Installation & Building
     now you have c2x-client compiled.
     run it in target system and wait to connect to c2x server
 
+Run
+----
+- If you have replaced the ip and port in source code and then compiled you can run the code without any argument.
+    - ./c2x-client
+- If you didn't replace the ip and port, or you want to connect to different server or port you can use arguments.
+    - ./c2x-client --ip 127.0.0.1 --port 54321
+    
+- Optional Arguments
+    - --ip Remote_IP
+    - --port Remote_Port
