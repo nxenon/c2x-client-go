@@ -1,2 +1,4 @@
+github.com/akamensky/argparse v1.3.0 h1:/y3NFl6Nhw6alHDWoI9tx3vSyrB5zRgs4y9jzHxtjjg=
+github.com/akamensky/argparse v1.3.0/go.mod h1:S5kwC7IuDcEr5VeXtGPRVZ5o/FdhcMlQz4IZQuw64xA=
 github.com/matishsiao/goInfo v0.0.0-20200404012835-b5f882ee2288 h1:cdM7et8/VlNnSBpq3KbyQWsYLCY0WsB7tvV8Fr0DUNE=
 github.com/matishsiao/goInfo v0.0.0-20200404012835-b5f882ee2288/go.mod h1:yLZrFIhv+Z20hxHvcZpEyKVQp9HMsOJkXAxx7yDqtvg=
