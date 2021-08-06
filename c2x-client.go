@@ -48,7 +48,9 @@ func main(){
 
 }
 
-func connectToServer(ip_and_port string){
+func connectToServer(
+	ip_and_port string,
+	){
 
 	// function for connecting to server
 	c, err := net.Dial("tcp", ip_and_port)
@@ -75,7 +77,9 @@ func receiveReply(){
 
 }
 
-func commandInterpreter(reply string){
+func commandInterpreter(
+	reply string,
+	){
 
 	reply_trimmed := strings.TrimSpace(reply)
 	reply = reply_trimmed
@@ -116,7 +120,11 @@ func commandInterpreter(reply string){
 
 }
 
-func translateCodesList(c string) string {
+func translateCodesList(
+	c string,
+	) (
+	string,
+	) {
 
 	codes_list := map[string]string{
 		"exec":"1",
@@ -134,7 +142,7 @@ func translateCodesList(c string) string {
 
 }
 
-func interpretCodes(code string, msg string){
+func interpretCodes(code, msg string){
 
 	if code == "exec" {
 		executeCommand(msg)
@@ -148,26 +156,36 @@ func interpretCodes(code string, msg string){
 
 }
 
-func splitCid(text string) []string {
+func splitCid(
+	text string,
+	) (
+	[]string,
+	) {
 
 	splitted := strings.Split(text, ",")
 	return splitted
 
 }
 
-func sendMsg(msg string){
+func sendMsg(
+	msg string,
+	){
 
 	clientSocket.Write([]byte(msg))
 
 }
 
-func msgManager(msg string){
+func msgManager(
+	msg string,
+	){
 
 	sendMsg(msg)
 
 }
 
-func executeCommand(msg string){
+func executeCommand(
+	msg string,
+	){
 
 	var prefix = "cid=" + translateCodesList("exec") + "," // prefix for answer
 
